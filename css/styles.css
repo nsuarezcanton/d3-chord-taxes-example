@@ -1,0 +1,50 @@
+#vis {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#subtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+#title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+#tooltip {
+    color: white;
+    opacity: .9;
+    background: #333;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    pointer-events: none;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 8pt;
+}
+
+#circle circle {
+    fill: none;
+    pointer-events: all;
+}
+
+.group path {
+    fill-opacity: .7;
+}
+
+.chord {
+    fill-opacity: .7;
+    stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+    display: none;
+}
